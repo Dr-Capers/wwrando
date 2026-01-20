@@ -81,3 +81,19 @@ Optionally, you can also install `requirements_full.txt` with the same process y
 `requirements_full.txt` will install additional libraries that speed up texture recoloring, as well as for building a distributable version of the randomizer. You can still run the randomizer from source without these.  
 
 If you are on Windows 8 or below, use `requirements_qt5.txt`/`requirements_qt5_full.txt` instead of the normal requirements files.  
+
+## Running the web UI (localhost)
+
+This repo includes a local web UI that wraps the randomizer and runs it in your browser.  
+It uses the same Python code under the hood and requires a base ISO on disk.  
+
+1) Put your vanilla USA ISO at `data/local/iso_cache/base.iso`.  
+2) Install the web dependencies:  
+`python3 -m pip install -r requirements_web.txt`  
+3) Start the server:  
+`python3 -m uvicorn web.server:app --reload`  
+4) Open `http://127.0.0.1:8000` in your browser.  
+
+Notes:
+- Outputs are written to `data/local/output`.  
+- Web settings are stored in `data/local/web_settings.yml`.  

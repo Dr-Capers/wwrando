@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wind Waker Randomizer - Web</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <div class="backdrop"></div>
+    <main class="app">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">LOCAL WEB INTERFACE</p>
+          <h1>Wind Waker Randomizer</h1>
+          <p class="tagline">
+            Full UI port in your browser. Drop in <code>base.iso</code>, tune
+            your settings, and spin up new seas.
+          </p>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-title">Base ISO</div>
+          <div id="iso-status" class="status">Checking...</div>
+          <div class="muted">Expected: <code>data/local/iso_cache/base.iso</code></div>
+          <div class="hero-actions">
+            <button id="refresh-iso">Refresh</button>
+            <button id="open-output">Copy Output Path</button>
+          </div>
+        </div>
+      </header>
+
+      <section class="layout">
+        <nav class="tabs" id="tabs"></nav>
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <h2 id="panel-title">Loading...</h2>
+              <p id="panel-subtitle" class="muted">Fetching schema and settings.</p>
+            </div>
+            <div class="panel-actions">
+              <button id="reset-defaults">Reset Defaults</button>
+              <button id="generate-seed">New Seed</button>
+            </div>
+          </div>
+          <div id="tab-content" class="tab-content"></div>
+        </section>
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <div class="sidebar-title">Display</div>
+            <label class="toggle">
+              <input id="show-hidden" type="checkbox" />
+              <span>Show Hidden Options</span>
+            </label>
+            <label class="toggle">
+              <input id="show-unbeatable" type="checkbox" />
+              <span>Show Unbeatable Options</span>
+            </label>
+          </div>
+          <div class="sidebar-card">
+            <div class="sidebar-title">Option Details</div>
+            <div id="option-description" class="muted">
+              Hover an option to see details.
+            </div>
+          </div>
+          <div class="sidebar-card">
+            <div class="sidebar-title">Validation</div>
+            <div id="validation-status" class="muted">Checking...</div>
+          </div>
+          <div class="sidebar-card">
+            <div class="sidebar-title">Permalink</div>
+            <input id="permalink" type="text" placeholder="Shareable settings link" />
+            <div id="permalink-warning" class="warning"></div>
+          </div>
+          <div class="sidebar-card">
+            <div class="sidebar-title">Randomize</div>
+            <button id="randomize" class="primary">Randomize</button>
+            <div id="run-status" class="status">Idle</div>
+            <pre id="run-traceback" class="traceback"></pre>
+          </div>
+          <div class="sidebar-card">
+            <div class="sidebar-title">Recent Runs</div>
+            <div class="recent-actions">
+              <button id="refresh-runs" class="secondary">Refresh</button>
+              <button id="download-latest" class="primary">Download Latest</button>
+            </div>
+            <div class="recent-section">
+              <div class="recent-label">Outputs</div>
+              <ul id="recent-outputs" class="recent-list"></ul>
+            </div>
+            <div class="recent-section">
+              <div class="recent-label">Logs</div>
+              <ul id="recent-logs" class="recent-list"></ul>
+            </div>
+          </div>
+          <div class="sidebar-card">
+            <div class="sidebar-title">About</div>
+            <p class="muted">
+              Created by LagoLunatic. Report issues at
+              <a href="https://github.com/LagoLunatic/wwrando/issues" target="_blank">GitHub</a>.
+            </p>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>

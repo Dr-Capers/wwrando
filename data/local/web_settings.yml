@@ -1,0 +1,183 @@
+clean_iso_path: 
+  /Users/michaelschumaker/GameProjects/wwrando/data/local/iso_cache/base.iso
+output_folder: /Users/michaelschumaker/GameProjects/wwrando/data/local/output
+seed: FoulSeventeenMakar
+progression_dungeons: true
+progression_tingle_chests: false
+progression_dungeon_secrets: false
+progression_puzzle_secret_caves: true
+progression_combat_secret_caves: true
+progression_savage_labyrinth: false
+progression_great_fairies: true
+progression_short_sidequests: true
+progression_long_sidequests: false
+progression_spoils_trading: false
+progression_minigames: false
+progression_battlesquid: false
+progression_free_gifts: false
+progression_mail: false
+progression_platforms_rafts: true
+progression_submarines: true
+progression_eye_reef_chests: false
+progression_big_octos_gunboats: false
+progression_triforce_charts: false
+progression_treasure_charts: false
+progression_expensive_purchases: false
+progression_island_puzzles: true
+progression_misc: true
+keylunacy: false
+sword_mode: Start with Hero's Sword
+required_bosses: true
+num_required_bosses: 3
+chest_type_matches_contents: true
+trap_chests: false
+hero_mode: true
+logic_obscurity: None
+logic_precision: None
+randomize_dungeon_entrances: true
+randomize_secret_cave_entrances: true
+randomize_miniboss_entrances: true
+randomize_boss_entrances: true
+randomize_secret_cave_inner_entrances: false
+randomize_fairy_fountain_entrances: true
+mix_entrances: Separate Dungeons From Caves & Fountains
+randomize_enemies: false
+randomize_enemy_palettes: true
+randomize_starting_island: true
+randomize_charts: false
+hoho_hints: true
+fishmen_hints: true
+korl_hints: false
+num_item_hints: 15
+num_location_hints: 5
+num_barren_hints: 0
+num_path_hints: 0
+cryptic_hints: true
+prioritize_remote_hints: false
+hint_importance: false
+swift_sail: true
+instant_text_boxes: true
+reveal_full_sea_chart: true
+add_shortcut_warps_between_dungeons: true
+skip_rematch_bosses: true
+invert_camera_x_axis: false
+invert_sea_compass_x_axis: true
+remove_title_and_ending_videos: false
+remove_music: false
+switch_targeting_mode: false
+randomized_gear:
+- Bait Bag
+- Beedle's Chart
+- Bombs
+- Boomerang
+- Cabana Deed
+- Command Melody
+- DRC Compass
+- DRC Dungeon Map
+- Deku Leaf
+- Delivery Bag
+- Din's Pearl
+- Dragon Tingle Statue
+- ET Compass
+- ET Dungeon Map
+- Earth God's Lyric
+- Earth Tingle Statue
+- FF Compass
+- FF Dungeon Map
+- FW Compass
+- FW Dungeon Map
+- Farore's Pearl
+- Fill-Up Coupon
+- Forbidden Tingle Statue
+- Ghost Ship Chart
+- Goddess Tingle Statue
+- Grappling Hook
+- Great Fairy Chart
+- Hero's Charm
+- Hookshot
+- Hurricane Spin
+- Iron Boots
+- Light Ring Chart
+- Maggie's Letter
+- Magic Armor
+- Moblin's Letter
+- Nayru's Pearl
+- Note to Mom
+- Octo Chart
+- Platform Chart
+- Power Bracelets
+- Progressive Bomb Bag
+- Progressive Bomb Bag
+- Progressive Bow
+- Progressive Bow
+- Progressive Magic Meter
+- Progressive Picto Box
+- Progressive Picto Box
+- Progressive Quiver
+- Progressive Quiver
+- Progressive Shield
+- Progressive Sword
+- Progressive Sword
+- Progressive Wallet
+- Progressive Wallet
+- Secret Cave Chart
+- Skull Hammer
+- Spoils Bag
+- Submarine Chart
+- Telescope
+- Tingle Tuner
+- Tingle's Chart
+- TotG Compass
+- TotG Dungeon Map
+- WT Compass
+- WT Dungeon Map
+- Wind God's Aria
+- Wind Tingle Statue
+starting_gear:
+- Ballad of Gales
+- Empty Bottle
+- Progressive Bow
+- Progressive Magic Meter
+- Progressive Shield
+- Progressive Sword
+- Song of Passing
+num_starting_triforce_shards: 0
+starting_pohs: 0
+starting_hcs: 3
+num_extra_starting_items: 1
+custom_player_model: Link
+player_in_casual_clothes: true
+disable_custom_player_voice: false
+disable_custom_player_items: false
+custom_color_preset: Custom
+custom_colors:
+  Shirt:
+  - 19
+  - 150
+  - 34
+  Pants:
+  - 181
+  - 162
+  - 130
+  Shoes:
+  - 99
+  - 105
+  - 107
+  Armbands:
+  - 174
+  - 209
+  - 0
+  Skin:
+  - 247
+  - 219
+  - 156
+  Eyes:
+  - 16
+  - 81
+  - 74
+  Shirt Emblem:
+  - 255
+  - 255
+  - 214
+do_not_generate_spoiler_log: false
+dry_run: false
